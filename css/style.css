@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Raleway:wght@100&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*font-family: 'Roboto', sans-serif;;*/
+    font-family: 'Playfair Display', serif;
+    background: #ccb68d;
+}
+
+/*-----------HEADER-----------*/
+header{
+    background-color: #ccb68d;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 6px 20px -4px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 3px 6px 20px -4px rgba(0,0,0,0.73);
+    -moz-box-shadow: 3px 6px 20px -4px rgba(0,0,0,0.73);
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: 100;
+    color: #312006;
+    padding-left: 50px;
+}
+header nav ul li{
+    margin: 0px 20px;
+    text-decoration: none;
+    list-style: none;
+}
+header nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #312006;
+    transition: opacity 300ms;
+}
+header nav ul li a:hover{
+    opacity: 0.6;
+}
+header nav ul{
+    margin: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+.registro{
+    color: #312006;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 100px;
+}
+.titulo-banner h2{
+    color: #312006;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+input{
+    min-height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 0.75rem;
+    padding-left: 10px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.contact-form textarea{
+    border: none;
+    border-radius: 0.75rem;
+}
+.delivery{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.delivery h3{
+    font-size: 35px;
+    color: #312006;
+}
+.delivery-a img{
+    width: 450px;
+}
+.delivery-box a{
+    font-size: 20px;
+    color: #ccb68d;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+.delivery-box{
+    color: #fcd9a5;
+    background-color: #312006;
+    padding: 8px 8px;
+    border-radius: 0.75rem;
+}
+
+
+/*-----------MAIN-----------*/
+.bienvenido{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    margin-bottom: 100px;
+}
+.bienvenido .bienvenido-contenedor{
+    font-size: 15px;
+    height: 800px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: #271111;
+}
+.bienvenido .right-image{
+    background-image: url(../img/banner-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+}
+.bienvenido h2{
+    color: #ac6700;
+    font-size: 60px;
+    border: 2px solid #312006;
+    padding: 20px;
+}
+.bienvenido p{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #754700;
+}
+.bienvenido a{
+    text-decoration: none;
+    color: #fcd9a5;
+    font-weight: bold;
+    background-color: #312006;
+    padding: 5px 10px;
+}
+.nosotros{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.nosotros-contenedor{
+    width: 40%;
+    padding: 35px;
+    text-align: center;
+    background-color: #eeddbe;
+}
+.nosotros img{
+    width: 15%;
+}
+.nosotros div h2{
+    font-size: 40px;
+    color: #312006;
+}
+.nosotros div p{
+    font-size: 20px;
+    margin: 20px;
+}
+.nosotros div a{
+    text-decoration: none;
+    color: #fcd9a5;
+    font-weight: bold;
+    background-color: #312006;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 0.75rem;
+}
+.local{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+.local h2{
+    font-size: 35px;
+    color: #312006;
+}
+.menu h2{
+    font-size: 30px;
+    color: #312006;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0px 15px;
+}
+.menu-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu-items{
+    border: 1px solid grey;
+    width: 260px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 3px 6px 20px -4px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 3px 6px 20px -4px rgba(0,0,0,0.73);
+    -moz-box-shadow: 3px 6px 20px -4px rgba(0,0,0,0.73);
+}
+.menu-items h3{
+    margin: 10px;
+}
+.menu-items a{
+    text-decoration: none;
+    color: #fcd9a5;
+    background-color: #312006;
+    padding: 8px 8px;
+    border-radius: 0.75rem;
+}
+.menu-items img{
+    width: 258px;
+    height: 250px;
+    object-fit: cover;
+}
+.menu-combo{
+    padding-bottom: 50px;
+}
+.menu-combo h2{
+    font-size: 30px;
+    color: #312006;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0px 15px;
+}
+.carrusel h2{
+    font-size: 40px;
+    color: #312006;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0px 15px;
+}
+.carrusel div img{
+    object-fit: cover;
+    width: 50%;
+    height: 800px;
+}
+
+/*-----------FOOTER-----------*/
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #af9b79;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.redes-sociales{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer div img{
+    width: 50px;
+}
+.logo{
+    width: 100px;
+}
+
+/*-----MEDIA QUERY-------*/
+
+@media screen and (max-width: 768px) {
+    header{
+        justify-content: center;
+    }
+    .nosotros-contenedor{
+        width: 90%;
+        order: 1;
+        padding: 40px;
+    }
+    .nosotros img{
+        width: 200px;
+        padding-bottom: 15px;
+    }
+    .registro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .delivery a img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .bienvenido h2{
+        font-size: 40px;
+    }
+    .bienvenido p{
+        font-size: 30px;
+    }
+    .nosotros-contenedor{
+        width: 90%;
+        order: 1;
+    }
+    .nosotros img{
+        width: 50%;
+        padding-bottom: 15px;
+    }
+    header h1{
+        margin-right: 50px;
+    }
+    header nav ul li{
+        margin: 0px 10px;
+    }
+    .contact-genero label{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-mensaje input{
+    margin: 5px;
+    }
+    .delivery a img{
+        width: 300px;
+    }
+}
