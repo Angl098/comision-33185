@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="delivery, comida, contactos, login, local, chef, nuevo, gastronomia, gastronomico">
+    <meta name="description" content="Como en casa 🏡  Se trata de una oferta gastronómica llena de productos seleccionados directanente de la granja a nuestra cocina los que son preparados con los cuidados e higiene necesarios para que te deleites comiendo como en casa">
+    <meta property="og:type" content="Web site">
+    <meta property="og:tittle" content="CEC | Rotiseria">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Como en casa 🏡  Se trata de una oferta gastronómica llena de productos seleccionados directanente de la granja a nuestra cocina los que son preparados con los cuidados e higiene necesarios para que te deleites comiendo como en casa">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
 </head>
 <body>
     <header>
         <h1>CEC</h1>
-        <nav>
-            <!--LISTA DESORDENADA-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./menu.html">Menú</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menú
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="./menu.html">Carta</a></li>
+                                <li><a class="dropdown-item" href="./menu.html">Menú diario</a></li>
+                                <li><a class="dropdown-item" href="./menu.html">Fritos</a></li>
+                                <li><a class="dropdown-item" href="./menu.html">Pastas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                                <li><a class="dropdown-item" href="../pages/servicios.html">Delivery</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -31,61 +71,59 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13156.609971445685!2d-58.61153344999999!3d-34.4736556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb335eb91ed5%3A0xa4aba407defaecd!2sMcDonald&#39;s!5e0!3m2!1ses-419!2sar!4v1671726008581!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">   
                 </iframe>
             </div>
-            <form class="contact-form" action="" method="" enctype="">
-                <div>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="Nombre" id="Nombre">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="@gmail.com">
                 </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="">
                 </div>
-                <div>
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" name="contraseña" id="contraseña">
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Calle</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Ombu 208">
                 </div>
-                <div>
-                    <h2>GENERO</h2>
-                    <div class="contact-genero">
-                        <label for="Masculino">Masculino</label>
-                        <input type="radio" name="genero">
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" name="genero">
-                        <label for="Otro">Otro</label>
-                        <input type="radio" name="genero">
-                    </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Departamento</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Departamento, estudio o piso">
                 </div>
-                <div>
-                    <h2>Selecciona un pais</h2>
-                    <select name="" id="">
-                        <option value="">Argnetina</option>
-                        <option value="">Chile</option>
-                        <option value="">España</option>
-                        <option value="">Otro</option>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Localidad</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegir...</option>
+                        <option>Don Torcuato</option>
+                        <option>Pacheco</option>
+                        <option>Otro</option>
                     </select>
                 </div>
-                <div>
-                    <h2>Dejanos tu mensaje</h2>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="col-12">
+                    
                 </div>
-                <div class="contact-mensaje">
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Vaciar formulario">
-                </div>
-                <div></div>
+                <div class="col-12">
+                    <div class="delivery-boton">
+                        <a href="">Hacé tu pedido</a>
             </form>
         </section>
     </main>
     <footer class="redes">
-        <a href="./index.html"><img class="logo" src="/img/logo CEC..png" alt="Logo CEC"></a>
+        <a href="./index.html"><img class="logo" src="../img/logo-cec..png" alt="Logo CEC"></a>
         <p class="eslogan">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div class="redes-sociales">
-            <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/logotipo-de-instagram.png" alt="Logo Instragram"></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/log-twitter.png" alt="Logo Twitter"></a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../img/whatsapp.png" alt="Logo whatsapp"></a>
-            
+            <a href="https://es-la.facebook.com/" target="_blank"><img class="logos-redes" src="../img/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="logos-redes" src="../img/logotipo-de-instagram.png" alt="Logo Instragram"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img class="logos-redes" src="../img/log-twitter.png" alt="Logo Twitter"></a>
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img class="logos-redes" src="../img/whatsapp.png" alt="Logo whatsapp"></a>
         </div>
+        <p class="derechos">© Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 </html>

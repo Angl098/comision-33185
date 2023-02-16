@@ -1,0 +1,49 @@
+//* VARIABLES
+$color-body: #ccb68d;  
+$color-titulos: #312006;
+$color-footer: #af9b79  ; 
+$color-body-claro: #eeddbe;
+$color-enlaces: #fcd9a5;
+
+//* LISTAS
+$colores:
+#eeddbe,
+#271111,
+#312006,
+#754700,
+#947443,
+#948570;
+
+$font-size:
+10px,
+20px,
+30px,
+40px,
+50px,
+100px,
+250px;
+
+//* EXTENDS
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-direction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//* MIXIN
+@mixin flex ($flex, $direction, $wrap, $justify, $aling){
+    display: $flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify; 
+    align-items: $aling;
+}
+
+
