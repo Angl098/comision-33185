@@ -83,13 +83,39 @@
     }
 }
 @media screen and (max-width: 375){
+    main{
+        .nosotros{
+            .nosotros-contenedor{
+                h2{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 8px;    
+                    margin: 5px;
+                }
+            }
+        }
+    }
     iframe{
         width: 50px;
     }
     
 }
 @media screen and (max-width: 320){
+    main{
+        .nosotros{
+            .nosotros-contenedor{
+                h2{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 8px;    
+                    margin: 0px;
+                }
+            }
+        }
+    }
     iframe{
-        width: 30px;
+        width: auto;
     }
 }

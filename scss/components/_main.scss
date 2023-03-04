@@ -42,11 +42,6 @@ main{
     .nosotros{
         padding-top: 60px;
         @include flex (flex, row, wrap, space-evenly, center);
-        // display: flex;
-        // flex-direction: row;
-        // flex-wrap: wrap;
-        // justify-content: space-evenly;
-        // align-items: center;
         padding-bottom: 50px;
         .nosotros-contenedor{
             width: 40%;
@@ -104,6 +99,7 @@ main{
                     object-fit: cover;
                 }
                 h3{
+                    font-size: 25px;
                     margin: 10px;
                 }
                 a{
@@ -144,6 +140,7 @@ main{
         }
         div{
             iframe{
+                width: auto;
                 @extend %flex;
             }
         }
@@ -195,6 +192,12 @@ main{
         @extend %flex;
         margin: 30px;
         gap: 100px;
+        div{
+            iframe{
+                width: auto;
+                @extend %flex;
+            }
+        }
         form{
             .delivery-boton{
                 width: 200px;
